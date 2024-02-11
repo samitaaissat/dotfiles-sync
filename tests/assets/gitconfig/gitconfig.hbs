@@ -1,0 +1,4 @@
+{{#each dirs}}
+[includeif "gitdir:{{this}}/"]
+	path = {{this}}/.gitconfig
+{{/each}}
