@@ -35,6 +35,7 @@ pub struct Template {
 ///         println!("{}", reg.render(&template.name, &template.vars).unwrap());
 ///     }
 /// }
+/// ```
 pub fn load_templates(directory: &str) -> Result<Vec<Template>, Box<dyn std::error::Error>> {
     let mut templates = Vec::new();
 
